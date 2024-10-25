@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Form</title>
+    <!-- External Scripts -->
+    <script type="module" src="./getRequest.js"></script>
+    <script type="module" src="./postRequest.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Let’s level up your brand, together</h2>
+            <form id="brandForm">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+    
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+    
+                <label for="role">Role</label>
+                <input type="text" id="role" name="role" placeholder="Role" required>
+    
+                <div class="privacy-policy">
+                    <input type="checkbox" id="privacyPolicy" required>
+                    <label for="privacyPolicy">You agree to our friendly <a href="#">privacy policy</a>.</label>
+                </div>
+    
+                <button type="submit" class="submit-button" id="submit-button">SUBMIT</button>
+            </form>
+        </div>
+    
+        <section class="users-wrapper"></section>
+    </div>
+    
+</body>
+</html>
